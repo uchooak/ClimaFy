@@ -39,7 +39,7 @@ export default function HomeFigma() {
             <a className="grid h-14 w-[280px] place-items-center rounded-[28px] bg-[#116b38] text-[15px] font-semibold text-white shadow-[0_4px_16px_rgba(0,0,0,0.18)]" href="/novo-relato">
               Relatar um problema agora
             </a>
-            <a className="grid h-14 w-[230px] place-items-center rounded-[28px] border-[1.5px] border-[#8b96a3] bg-white text-[15px] font-semibold text-[#15191e]" href="#ranking">
+            <a className="grid h-14 w-[230px] place-items-center rounded-[28px] border-[1.5px] border-[#8b96a3] bg-white text-[15px] font-semibold text-[#15191e]" href="/ranking">
               Ver bairros esquecidos
             </a>
           </div>
@@ -82,7 +82,7 @@ export default function HomeFigma() {
             <p className="inline-flex h-[26px] items-center rounded-[13px] bg-[#e0f5e9] px-3 text-[10px] font-semibold uppercase text-[#1a9651]">Ranking de vulnerabilidade</p>
             <h2 className="mt-4 text-[30px] font-bold leading-[36px] text-[#15191e]">Os bairros que mais precisam de atencao</h2>
             <p className="mt-4 text-[13px] leading-[16px] text-[#8b96a3]">Relatos da comunidade cruzados com dados publicos de investimento geram um score de risco por bairro.</p>
-            <a className="mt-[58px] inline-grid h-10 w-[196px] place-items-center rounded-lg bg-[#1a9651] text-[13px] font-semibold text-white" href="#ranking">
+            <a className="mt-[58px] inline-grid h-10 w-[196px] place-items-center rounded-lg bg-[#1a9651] text-[13px] font-semibold text-white" href="/ranking">
               Ver ranking completo +
             </a>
           </div>
@@ -109,7 +109,7 @@ export default function HomeFigma() {
                   </div>
                 </div>
                 <p className="mt-8 text-[10px] text-[#8b96a3]">Tendencia esta semana <span className="font-semibold text-[#d62727]">{item.trend}</span></p>
-                <a className="mt-[21px] grid h-10 w-full place-items-center rounded-lg border border-[#1a9651] bg-white text-[12px] font-semibold text-[#1a9651]" href="#mapa">
+                <a className="mt-[21px] grid h-10 w-full place-items-center rounded-lg border border-[#1a9651] bg-white text-[12px] font-semibold text-[#1a9651]" href={item.neighborhood === 'Bras' ? '/bairro/bras' : '#mapa'}>
                   Ver detalhes do bairro +
                 </a>
               </article>
@@ -124,7 +124,7 @@ export default function HomeFigma() {
             <p className="inline-flex h-[26px] items-center rounded-[13px] bg-[#e0f5e9] px-3 text-[10px] font-semibold uppercase text-[#1a9651]">Ultimos relatos</p>
             <h2 className="mt-4 text-[30px] font-bold leading-[36px] text-[#15191e]">Registrados agora pela comunidade</h2>
           </div>
-          <a className="grid h-10 w-[196px] place-items-center rounded-lg border border-[#1a9651] text-[13px] font-semibold text-[#1a9651]" href="#relatos">Ver todos os relatos +</a>
+          <a className="grid h-10 w-[196px] place-items-center rounded-lg border border-[#1a9651] text-[13px] font-semibold text-[#1a9651]" href="/relatos">Ver todos os relatos +</a>
         </div>
         <div className="mt-[34px] grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {reports.map((report) => (
@@ -183,9 +183,9 @@ export default function HomeFigma() {
           </div>
           <nav className="flex flex-wrap gap-[54px]">
             <a href="#mapa">Inicio</a>
-            <a href="#ranking">Ranking</a>
-            <a href="#relatos">Relatos</a>
-            <a href="#sobre">Sobre</a>
+            <a href="/ranking">Ranking</a>
+            <a href="/relatos">Relatos</a>
+            <a href="/sobre">Sobre</a>
           </nav>
           <span className="text-[11px] text-[#48525f]">(c) ClimaFy 2026</span>
         </div>

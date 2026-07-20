@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function AppLayout({ children }) {
+  const { pathname } = useLocation();
+  const activeClass = 'relative font-semibold text-[#1a9651] after:absolute after:left-[3px] after:top-[37px] after:h-[3px] after:w-8 after:bg-[#1a9651]';
+  const idleClass = 'hover:text-[#1a9651]';
+
   return (
     <div className="min-h-screen bg-[#f8fafb] text-[#15191e]">
       <header className="sticky top-0 z-[1000] h-[68px] border border-[#e3e8ec] bg-white shadow-[0_4px_76.2px_rgba(0,0,0,0.25)]">
@@ -13,18 +17,18 @@ export default function AppLayout({ children }) {
           </Link>
 
           <nav className="absolute left-[624px] top-[23px] hidden items-start gap-[76px] text-[14px] leading-[17px] text-[#48525f] lg:flex">
-            <a href="#mapa" className="relative font-semibold text-[#1a9651] after:absolute after:left-[3px] after:top-[37px] after:h-[3px] after:w-8 after:bg-[#1a9651]">
+            <Link to="/" className={pathname === '/' ? activeClass : idleClass}>
               Inicio
-            </a>
-            <a href="#ranking" className="hover:text-[#1a9651]">
+            </Link>
+            <Link to="/ranking" className={pathname === '/ranking' ? activeClass : idleClass}>
               Ranking
-            </a>
-            <a href="#relatos" className="hover:text-[#1a9651]">
+            </Link>
+            <Link to="/relatos" className={pathname === '/relatos' ? activeClass : idleClass}>
               Relatos
-            </a>
-            <a href="#sobre" className="hover:text-[#1a9651]">
+            </Link>
+            <Link to="/sobre" className={pathname === '/sobre' ? activeClass : idleClass}>
               Sobre
-            </a>
+            </Link>
           </nav>
 
           <div className="absolute right-[72px] top-[16px] flex items-center gap-[33px] max-sm:right-5">

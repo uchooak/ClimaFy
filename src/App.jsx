@@ -1,8 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import AppLayout from './components/AppLayout.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 import Home from './pages/HomeFigma.jsx';
 import LoginPage from './pages/LoginPage.jsx';
+import NeighborhoodPage from './pages/NeighborhoodPage.jsx';
 import NewReportPage from './pages/NewReportPage.jsx';
+import RankingPage from './pages/RankingPage.jsx';
+import ReportsPage from './pages/ReportsPage.jsx';
 import WelcomePage from './pages/WelcomePage.jsx';
 
 export default function App() {
@@ -13,6 +17,38 @@ export default function App() {
         element={
           <AppLayout>
             <Home />
+          </AppLayout>
+        }
+      />
+      <Route
+        path="/ranking"
+        element={
+          <AppLayout>
+            <RankingPage />
+          </AppLayout>
+        }
+      />
+      <Route
+        path="/relatos"
+        element={
+          <AppLayout>
+            <ReportsPage />
+          </AppLayout>
+        }
+      />
+      <Route
+        path="/bairro/bras"
+        element={
+          <AppLayout>
+            <NeighborhoodPage />
+          </AppLayout>
+        }
+      />
+      <Route
+        path="/sobre"
+        element={
+          <AppLayout>
+            <AboutPage />
           </AppLayout>
         }
       />

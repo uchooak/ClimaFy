@@ -202,6 +202,18 @@ function renderTable() {
             </tr>
         `;
     }).join('');
+
+    connectBrasDetailLink();
+}
+
+function connectBrasDetailLink() {
+    document.querySelectorAll('#ranking-body tr').forEach((row) => {
+        const name = row.querySelector('.bairro-name')?.textContent || '';
+        const action = row.querySelector('.row-action');
+        if (action && ['Brás', 'BrÃ¡s', 'BrÃƒÂ¡s', 'Bras'].includes(name)) {
+            action.href = 'bairro-bras.html';
+        }
+    });
 }
 
 function renderChart() {

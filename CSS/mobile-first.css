@@ -1,0 +1,810 @@
+html {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+.main-header,
+.site-header,
+.main-footer,
+.site-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+}
+
+.brand-logo,
+.brand {
+    justify-content: center;
+}
+
+.main-nav,
+.auth-actions,
+.header-actions,
+.footer-nav,
+.site-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+}
+
+.main-nav a,
+.login-link,
+.header-actions a,
+.footer-nav a,
+.site-footer a {
+    white-space: nowrap;
+}
+
+.btn-primary,
+.btn-outline,
+.btn-white,
+.btn-outline-white,
+.report-link,
+.cta-primary,
+.cta-secondary,
+.btn-submit,
+.btn-save,
+.btn-skip,
+.form-footer button {
+    min-height: 44px;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-wrapper,
+.hero-section,
+.ranking-section,
+.activity-section,
+.ranking-hero,
+.reports-hero,
+.featured-section,
+.distribution-section,
+.neighborhood-section,
+.method-section,
+.investment-section,
+.history-section,
+.data-section,
+.what-section,
+.problem-section,
+.neighborhood-hero,
+.content-grid,
+.report-form,
+.admin-shell {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.hero-section,
+.stats-banner,
+.how-it-works,
+.ranking-section,
+.reports-section,
+.activity-section,
+.cta-banner,
+.ranking-hero,
+.ranking-controls,
+.ranking-table-section,
+.chart-card,
+.method-section,
+.investment-section,
+.history-section,
+.category-section,
+.data-section,
+.ranking-cta,
+.reports-hero,
+.filter-bar,
+.results-toolbar,
+.cards-section,
+.dark-stats,
+.featured-section,
+.distribution-section,
+.voices-section,
+.neighborhood-section,
+.validation-section,
+.reports-cta,
+.about-hero,
+.what-section,
+.problem-section,
+.purpose-section,
+.steps-section,
+.tech-section,
+.team-section,
+.about-cta,
+.neighborhood-hero,
+.kpi-strip,
+.content-grid,
+.related-section,
+.report-page,
+.welcome-page,
+.preferences-page,
+.page-wrapper,
+.admin-main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.hero-section,
+.ranking-hero,
+.reports-hero,
+.about-hero,
+.neighborhood-hero {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.hero-title,
+.hero-copy h1,
+.reports-hero h1,
+.about-hero h1,
+.neighborhood-hero h1,
+.ranking-cta h2,
+.reports-cta h2,
+.about-cta h2,
+.cta-banner h2,
+.page-heading h1,
+.welcome-header h1,
+.preferences-header h1,
+.card-header h1,
+.admin-header h1 {
+    font-size: clamp(1.75rem, 10vw, 2.5rem);
+    line-height: 1.12;
+}
+
+.hero-description,
+.hero-copy p,
+.reports-hero p,
+.about-hero p,
+.page-heading > p,
+.welcome-header p,
+.preferences-header p,
+.card-header p {
+    max-width: 100%;
+}
+
+.hero-buttons,
+.cta-actions,
+.ranking-cta menu,
+.reports-cta menu,
+.about-cta menu,
+.form-actions,
+.form-footer,
+.results-toolbar,
+.admin-header,
+.panel-header,
+.pagination-panel,
+.modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.hero-buttons a,
+.cta-actions a,
+.ranking-cta a,
+.reports-cta a,
+.about-cta a,
+.form-actions a,
+.form-actions button,
+.form-footer button,
+.results-toolbar select,
+.pagination-panel nav {
+    width: 100%;
+}
+
+.hero-map,
+.map-shell {
+    width: 100%;
+    min-width: 0;
+    min-height: 32rem;
+}
+
+.prototype-map {
+    width: 125%;
+    left: -12.5%;
+}
+
+.map-legend {
+    top: auto;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    max-width: none;
+}
+
+.map-card {
+    left: 1rem;
+    right: 1rem;
+    bottom: 11.75rem;
+    width: auto;
+}
+
+.map-controls {
+    bottom: 9rem;
+}
+
+.stats-grid,
+.steps-grid,
+.ranking-cards,
+.reports-grid,
+.hero-metrics,
+.controls-form,
+.factor-list,
+.category-grid,
+.source-list,
+.featured-grid,
+.voice-grid,
+.validation-steps,
+.purpose-grid,
+.tech-grid,
+.team-grid,
+.related-grid,
+.kpi-grid,
+.top-grid,
+.bottom-grid,
+.stat-strip dl,
+.categories-grid,
+.frequency-grid,
+.category-grid,
+.severity-options,
+.location-fields,
+.summary-list,
+.quick-actions,
+.share-card,
+.form-grid,
+.review-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.reports-grid,
+.ranking-cards,
+.steps-grid,
+.related-grid {
+    align-items: stretch;
+}
+
+.ranking-intro,
+.activity-intro,
+.method-intro,
+.section-copy,
+.history-copy,
+.investment-copy {
+    max-width: none;
+}
+
+.filter-form,
+.controls-form,
+.moderation-content .filter-bar {
+    grid-template-columns: 1fr;
+}
+
+.status-tabs,
+.control-group,
+.period-group {
+    min-width: 0;
+    flex-wrap: wrap;
+}
+
+.table-wrap,
+.wide-table,
+.history-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ranking-table,
+.history-table,
+.moderation-table,
+.review-table {
+    min-width: 760px;
+}
+
+.chart-container,
+.chart-card figure,
+.monthly-panel figure,
+.reports-chart,
+.heat-map {
+    overflow-x: auto;
+}
+
+.bar-chart,
+#ranking-chart,
+#monthly-chart {
+    min-width: 620px;
+}
+
+.stepper-card,
+.stepper-nav,
+.report-stepper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.stepper-list,
+.report-stepper ol {
+    min-width: 520px;
+}
+
+.registration-card,
+.preferences-card,
+.welcome-card,
+.form-card,
+.login-container,
+.panel {
+    width: 100%;
+    max-width: 100%;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.login-section,
+.content-wrapper .hero-section {
+    width: 100%;
+}
+
+.stats-section {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.stat-divider {
+    display: none;
+}
+
+.admin-shell {
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    padding: 1rem;
+}
+
+.sidebar-brand,
+.sidebar-user {
+    justify-content: center;
+    text-align: center;
+}
+
+.sidebar-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.sidebar-nav a {
+    grid-template-columns: 32px 1fr;
+    min-width: 0;
+}
+
+.admin-main {
+    width: 100%;
+}
+
+.kpi-strip dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.category-row,
+.deficit-row,
+.timeline li,
+.neighborhood-ranking li,
+.reports-cell,
+.highlight-card {
+    grid-template-columns: 1fr;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .stats-grid,
+    .hero-metrics,
+    .about-metrics,
+    .purpose-grid,
+    .steps-grid,
+    .tech-grid,
+    .team-grid,
+    .related-grid,
+    .kpi-grid,
+    .stat-strip dl,
+    .categories-grid,
+    .category-grid,
+    .summary-list,
+    .quick-actions,
+    .severity-options,
+    .location-fields {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-buttons,
+    .cta-actions,
+    .ranking-cta menu,
+    .reports-cta menu,
+    .about-cta menu,
+    .form-actions,
+    .form-footer,
+    .results-toolbar,
+    .admin-header,
+    .panel-header,
+    .pagination-panel,
+    .modal-actions {
+        grid-template-columns: repeat(2, minmax(0, auto));
+        align-items: center;
+        justify-content: start;
+    }
+
+    .results-toolbar,
+    .admin-header,
+    .panel-header,
+    .pagination-panel {
+        justify-content: space-between;
+    }
+
+    .hero-buttons a,
+    .cta-actions a,
+    .ranking-cta a,
+    .reports-cta a,
+    .about-cta a,
+    .form-actions a,
+    .form-actions button,
+    .form-footer button,
+    .results-toolbar select,
+    .pagination-panel nav {
+        width: auto;
+    }
+
+    .share-card,
+    .highlight-card,
+    .category-row,
+    .deficit-row {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .form-grid,
+    .location-fields {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .full-width,
+    .location-fields .full {
+        grid-column: 1 / -1;
+    }
+
+    .map-legend {
+        left: auto;
+        max-width: 18rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-header,
+    .site-header,
+    .main-footer,
+    .site-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .brand-logo,
+    .brand {
+        justify-content: flex-start;
+    }
+
+    .main-nav,
+    .auth-actions,
+    .header-actions,
+    .footer-nav,
+    .site-footer nav {
+        justify-content: flex-start;
+    }
+
+    .hero-section,
+    .stats-banner,
+    .how-it-works,
+    .ranking-section,
+    .reports-section,
+    .activity-section,
+    .cta-banner,
+    .ranking-hero,
+    .ranking-controls,
+    .ranking-table-section,
+    .chart-card,
+    .method-section,
+    .investment-section,
+    .history-section,
+    .category-section,
+    .data-section,
+    .ranking-cta,
+    .reports-hero,
+    .filter-bar,
+    .results-toolbar,
+    .cards-section,
+    .dark-stats,
+    .featured-section,
+    .distribution-section,
+    .voices-section,
+    .neighborhood-section,
+    .validation-section,
+    .reports-cta,
+    .about-hero,
+    .what-section,
+    .problem-section,
+    .purpose-section,
+    .steps-section,
+    .tech-section,
+    .team-section,
+    .about-cta,
+    .neighborhood-hero,
+    .kpi-strip,
+    .content-grid,
+    .related-section,
+    .report-page,
+    .welcome-page,
+    .preferences-page,
+    .page-wrapper,
+    .admin-main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .reports-grid,
+    .ranking-cards,
+    .featured-grid,
+    .voice-grid,
+    .validation-steps,
+    .bottom-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .controls-form,
+    .filter-form {
+        grid-template-columns: minmax(0, 1fr) minmax(12rem, auto);
+    }
+
+    .hero-map,
+    .map-shell {
+        min-height: 36rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-header,
+    .site-header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .main-footer,
+    .site-footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hero-section,
+    .ranking-section,
+    .activity-section,
+    .content-wrapper,
+    .neighborhood-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(28rem, 1fr);
+        align-items: center;
+    }
+
+    .ranking-hero,
+    .reports-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(28rem, auto);
+        align-items: center;
+    }
+
+    .what-section,
+    .problem-section,
+    .method-section,
+    .investment-section,
+    .history-section,
+    .data-section,
+    .featured-section,
+    .distribution-section,
+    .neighborhood-section,
+    .content-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.75fr);
+    }
+
+    .report-form {
+        grid-template-columns: minmax(0, 1fr) 380px;
+    }
+
+    .form-footer {
+        grid-column: 1 / -1;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .steps-grid,
+    .reports-grid,
+    .category-grid,
+    .source-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .ranking-cards,
+    .factor-list,
+    .voice-grid,
+    .frequency-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .purpose-grid {
+        grid-template-columns: 277px repeat(3, minmax(0, 1fr));
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .related-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .admin-shell {
+        grid-template-columns: 240px minmax(0, 1fr);
+    }
+
+    .sidebar {
+        min-height: 100vh;
+    }
+
+    .sidebar-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .top-grid {
+        grid-template-columns: minmax(0, 1fr) 296px;
+    }
+
+    .bottom-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .kpi-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .kpi-strip dl {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .filter-form {
+        grid-template-columns: auto 180px 180px 160px minmax(12rem, 1fr);
+    }
+
+    .controls-form {
+        grid-template-columns: auto minmax(0, 1fr) 267px;
+    }
+
+    .moderation-content .filter-bar {
+        grid-template-columns: 280px minmax(0, 1fr) 180px;
+    }
+
+    .hero-map,
+    .map-shell {
+        min-height: 500px;
+    }
+
+    .prototype-map {
+        width: 100%;
+        left: 0;
+    }
+
+    .map-card {
+        right: auto;
+        bottom: 4.25rem;
+        width: min(14.5rem, calc(100% - 2rem));
+    }
+
+    .map-controls {
+        bottom: 1rem;
+    }
+
+    .map-legend {
+        top: 1rem;
+        bottom: auto;
+        left: auto;
+    }
+}
+
+@media (min-width: 1180px) {
+    .hero-section,
+    .stats-banner,
+    .how-it-works,
+    .ranking-section,
+    .reports-section,
+    .activity-section,
+    .cta-banner,
+    .ranking-hero,
+    .ranking-controls,
+    .ranking-table-section,
+    .chart-card,
+    .method-section,
+    .investment-section,
+    .history-section,
+    .category-section,
+    .data-section,
+    .ranking-cta,
+    .reports-hero,
+    .filter-bar,
+    .results-toolbar,
+    .cards-section,
+    .dark-stats,
+    .featured-section,
+    .distribution-section,
+    .voices-section,
+    .neighborhood-section,
+    .validation-section,
+    .reports-cta,
+    .about-hero,
+    .what-section,
+    .problem-section,
+    .purpose-section,
+    .steps-section,
+    .tech-section,
+    .team-section,
+    .about-cta,
+    .neighborhood-hero,
+    .kpi-strip,
+    .content-grid,
+    .related-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hero-title,
+    .hero-copy h1,
+    .reports-hero h1,
+    .about-hero h1,
+    .neighborhood-hero h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+}
